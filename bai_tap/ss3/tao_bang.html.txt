@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo danh sách</title>
+</head>
+<body>
+<ul>
+    <li><b>Việt Nam</b></li>
+</ul>
+<ol>
+    <li>Quảng Trị</li>
+    <li>Đà Nẵng</li>
+    <li>Huế</li>
+    <li>Quảng Nam</li>
+</ol>
+<ul>
+    <li><b>USA</b></li>
+</ul>
+<ol>
+    <li>New York</li>
+    <li>Los Angeles</li>
+    <li>Chicago</li>
+    <li>Washington DC</li>
+</ol>
+<ul>
+    <li><b>China</b></li>
+</ul>
+<ol>
+    <li>Beijing</li>
+    <li>Chongqing</li>
+    <li>Shanghai</li>
+    <li>Tianjin</li>
+</ol>
+</body>
+</html>
