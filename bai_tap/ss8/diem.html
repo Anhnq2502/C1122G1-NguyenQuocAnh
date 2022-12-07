@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let diem_kt=+prompt("Nhập điểm kiểm tra");
+  let diem_giua_ki=+prompt("Nhập điểm giữa kì");
+  let diem_cuoi_ki=+prompt("Nhập điểm cuối kì");
+  let avg=(diem_kt+(diem_giua_ki*2)+(diem_cuoi_ki*3))/6
+  if (avg>=8){
+    alert("Đạt học sinh giỏi")
+  }else if (avg>=7.9){
+    alert("Đạt học sinh khá")
+  }else if (avg>=6.4){
+    alert("Học lực trung bình.")
+  }else {
+    alert("Gà")
+  }
+</script>
+</body>
+</html>
