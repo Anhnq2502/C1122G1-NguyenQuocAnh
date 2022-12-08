@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        let a = +prompt("Nhập a");
+        let b = +prompt("Nhập b");
+        let x;
+        if (a === b && 0 === b) {
+            alert("phương trình có vô số nghiệm");
+        }
+        else if (a === 0 && b !== 0) {
+            alert("phương trình vô nghiệm");
+        }
+        else if (a !== 0) {
+            x = (-b) / a;
+            alert("phương trình có nghiệm là" + x);
+        }
+</script>
+</body>
+</html>

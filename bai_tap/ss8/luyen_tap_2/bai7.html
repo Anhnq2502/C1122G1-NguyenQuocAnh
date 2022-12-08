@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h1> Giải phương trình bậc 2</h1>-->
+<!--<input type="number" id="a" placeholder="Nhập a">-->
+<!--<input type="number" id="b" placeholder="Nhập b">-->
+<!--<input type="number" id="c" placeholder="Nhập c">-->
+<!--<button onclick="giaiPt()">Giải</button>-->
+<script>
+    let a = +prompt("Nhập a")
+    let b = +prompt("Nhập b")
+    let c = +prompt("Nhập c")
+    let x1;
+    let x;
+    let x2;
+    let delta = b * b - 4 * a * c;
+    if (delta === 0) {
+        x = (-b) / (2 * a);
+        alert("phương trình có nghiệm kép là " + x);
+    } else if (delta > 0) {
+        x1 = ((-b) + Math.sqrt(delta)) / (2 * a);
+        x2 = ((-b) - Math.sqrt(delta)) / (2 * a);
+        alert(" phương trình có nghiệm" + x1);
+        alert(" phương trình có nghiệm" + x2);
+    } else
+        alert("phương trình vô nghiệm");
+</script>
+</body>
+</html>

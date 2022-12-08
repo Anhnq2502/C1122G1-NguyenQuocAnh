@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let von = +prompt("số tiền gửi");
+    let n = +prompt("số tháng");
+    let i = +prompt("lãi suất");
+    let soTienLai;
+    soTienLai = von * Math.pow((1 + (i / 100)), n);
+    alert("số tiền lãi là: " + soTienLai);
+</script>
+</body>
+</html>
