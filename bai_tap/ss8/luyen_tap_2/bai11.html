@@ -11,7 +11,8 @@
     if (thuNhap > 12000000) {
         thue = thuNhap * 5 / 100;
         alert("Số tiền phải nộp thuế là" + thue);
-    }
+    } else if (thuNhap > 0 && thuNhap < 12000000)
+        alert("Không phải nộp thuế");
 </script>
 </body>
 </html>
