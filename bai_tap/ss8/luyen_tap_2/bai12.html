@@ -6,12 +6,16 @@
 </head>
 <body>
 <script>
+    let lai;
     let von = +prompt("số tiền gửi");
     let n = +prompt("số tháng");
     let i = +prompt("lãi suất");
-    let soTienLai;
-    soTienLai = von * Math.pow((1 + (i / 100)), n);
-    alert("số tiền lãi là: " + soTienLai);
+    let soTienNhan;
+    if (von > 0) {
+        soTienNhan = von * Math.pow((1 + (i / 100)), (n / 12));
+        lai = soTienNhan - von;
+        alert("số tiền lãi là: " + lai);
+    }
 </script>
 </body>
 </html>

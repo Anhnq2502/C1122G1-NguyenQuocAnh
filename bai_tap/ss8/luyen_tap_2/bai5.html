@@ -8,9 +8,11 @@
 <script>
     let a = +prompt("Nhập a");
     let b = +prompt("Nhập b");
-    let S;
-    S = 1/2 * a * b;
-    alert("Diện tích hình vuông là" + S);
+    let s;
+    if (a > 0 && b > 0) {
+        s = 1 / 2 * a * b;
+        alert("Diện tích hình vuông là" + s);
+    }
 </script>
 </body>
 </html>

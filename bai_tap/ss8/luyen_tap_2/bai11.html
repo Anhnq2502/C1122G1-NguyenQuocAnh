@@ -8,8 +8,10 @@
 <script>
     let thuNhap = +prompt("Nhập số tiền thu Nhập ");
     let thue;
-    thue = thuNhap * 20 / 100;
-    alert("Số tiền phải nộp thuế là" + thue);
+    if (thuNhap > 12000000) {
+        thue = thuNhap * 5 / 100;
+        alert("Số tiền phải nộp thuế là" + thue);
+    }
 </script>
 </body>
 </html>

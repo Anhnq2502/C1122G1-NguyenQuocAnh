@@ -8,8 +8,10 @@
 <script>
     let soDien = +prompt("Nhập số điện ");
     let giaDien;
-    giaDien = soDien * 2.242;
-    alert("Giá điện là " + giaDien);
+    if (soDien > 0) {
+        giaDien = soDien * 2.242;
+        alert("Giá điện là " + giaDien);
+    }
 </script>
 </body>
 </html>
