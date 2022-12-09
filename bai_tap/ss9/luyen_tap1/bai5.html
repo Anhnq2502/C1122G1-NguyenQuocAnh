@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let tong = 1;
+    let c = a + b;
+    let result = '0 1 1 ';
+    for (let i = 3; i <= 20; i++) {
+        a = b;
+        b = c;
+        c = a + b;
+        tong += b;
+        result += c.toString() + ' ';
+    }
+    document.write("20 số fibonacci là: " + result + "<br>" )
+    document.write("Tổng 20 số fibonacci là :  " + tong);
+</script>
+</body>
+</html>
