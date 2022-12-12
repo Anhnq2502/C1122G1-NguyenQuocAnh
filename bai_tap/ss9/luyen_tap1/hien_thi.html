@@ -8,7 +8,7 @@
 <input type="button" value="Tìm số nguyên tố" onclick="soLuongNguyenTo()">
 <script>
   function tinhSoNguyenTo(amount) {
-    let so_nguyen_to = [];
+    let soNguyenTo = [];
     let count=0;
     let number=0;
     for (let i=0; ;i++){
@@ -16,7 +16,7 @@
         number=0;
       }else if (i===2||i===3){
         count++;
-        so_nguyen_to.push(i);
+        soNguyenTo.push(i);
       }else if (i%2===0){
         number=0;
       }else if (i>=4){
@@ -28,7 +28,7 @@
             number++;
           }
         }if (number>0){
-          so_nguyen_to.push(i);
+          soNguyenTo.push(i);
           count++;
           if (count===amount){
             break;
@@ -36,13 +36,13 @@
         }
       }
     }
-    return so_nguyen_to;
+    return soNguyenTo;
 
   }
   function soLuongNguyenTo() {
-    let so_luong= Number(prompt("Nhập số lượng số nguyên tố cần tìm: "));
-    let so_nguyen_to= tinhSoNguyenTo(so_luong);
-    document.write("Hiển thị " + so_luong + " số nguyên tố đầu tiên gồm: [" + so_nguyen_to + "]");
+    let soLuong= Number(prompt("Nhập số lượng số nguyên tố cần tìm: "));
+    let soNguyenTo= tinhSoNguyenTo(soLuong);
+    document.write("Hiển thị " + soLuong + " số nguyên tố đầu tiên gồm: [" + soNguyenTo + "]");
   }
 </script>
 </body>
