@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let soGiaiThua;
+    let b = 1;
+    let n = +prompt("Nhập số cần tính giai thừa");
+    for (let i = 1; i <= n; i++) {
+        a = i;
+        b *= a;
+        soGiaiThua = b;
+    }
+    document.write("số đó có:" + soGiaiThua + "giai thừa");
+</script>
+</body>
+</html>
