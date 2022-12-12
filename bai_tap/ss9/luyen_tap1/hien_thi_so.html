@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Tìm số nguyên tố" onclick="soLuongNguyenTo()">
+<script>
+    function tinhSoNguyenTo(amount) {
+        let soNguyenTo = [];
+        let count = 0;
+        let number = 0;
+        for (let i = 0; ; i++) {
+            if (i <= 1) {
+                number = 0;
+            } else if (i === 2 || i === 3) {
+                count++;
+                soNguyenTo.push(i);
+            } else if (i % 2 === 0) {
+                number = 0;
+            } else if (i >= 4) {
+                for (let j = 3; j < (i - 1); j++) {
+                    if (i % j === 0) {
+                        number = 0;
+                        break;
+                    } else {
+                        number++;
+                    }
+                }
+                if (number > 0) {
+                    soNguyenTo.push(i);
+                    count++;
+                    if (count === amount) {
+                        break;
+                    }
+                }
+            }
+        }
+        return soNguyenTo;
+
+    }
+
+    function soLuongNguyenTo() {
+        let soLuong = Number(prompt("Nhập số lượng số nguyên tố cần tìm: "));
+        let soNguyenTo = tinhSoNguyenTo(soLuong);
+        document.write("Hiển thị " + soLuong + " số nguyên tố đầu tiên gồm: [" + soNguyenTo + "]");
+    }
+</script>
+</body>
+</html>
