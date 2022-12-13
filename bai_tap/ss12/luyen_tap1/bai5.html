@@ -6,17 +6,16 @@
 </head>
 <body>
 <script>
-  let str = prompt('Nhập chuỗi bạn cần tìm số nguyên âm');
-  let count = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === '-') {
-      //Check phía sau dấu - có phải là số hay không.
-      if (!isNaN(str[i+1])) {
-        count++;
-      }
+    let str = prompt('Nhập chuỗi bạn cần tìm số nguyên âm');
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === '-') {
+            if (!isNaN(str[i + 1])) {
+                count++;
+            }
+        }
     }
-  }
-  alert("Có tất cả " + count + " số nguyên âm trong chuỗi vừa nhập.");
+    alert("Có tất cả " + count + " số nguyên âm trong chuỗi vừa nhập.");
 </script>
 </body>
 </html>

@@ -6,24 +6,18 @@
 </head>
 <body>
 <script>
-  let str = window.prompt();
-  let result = [];
-  for(let x=0; x<str.length; x++)
-  {
-    if(str.indexOf(str[x]) === 0)
-    {
-      result.push(str[x].toLocaleLowerCase());
+    let str = window.prompt();
+    let result = [];
+    for (let x = 0; x < str.length; x++) {
+        if (str.indexOf(str[x]) === 0) {
+            result.push(str[x].toLocaleLowerCase());
+        } else if (str.indexOf(str[x]) !== 0) {
+            result.push(str[x].toLocaleUpperCase());
+        } else {
+            result.push(str[x]);
+        }
     }
-    else if(str.indexOf(str[x]) !== 0)
-    {
-      result.push(str[x].toLocaleUpperCase());
-    }
-    else
-    {
-      result.push(str[x]);
-    }
-  }
-  document.write(result.join(''));
+    document.write(result.join(''));
 </script>
 </body>
 </html>
