@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrA = [];
+    for (let i = 0; i < 10; i++) {
+        arrA[i] = parseInt(prompt('Giá trị phần tử thứ ' + (i + 1) + ' của mảng A là :'));
+    }
+    let arrB = [];
+    for (let i = 0; i < 10; i++) {
+        arrB[i] = parseInt(prompt('Giá trị phần tử thứ ' + (i + 1) + ' của mảng B là :'));
+    }
+    let arrC = [...arrA, ...arrB];
+    alert("Mảng C là: " + arrC);
+</script>
+</body>
+</html>

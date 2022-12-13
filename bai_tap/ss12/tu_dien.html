@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+    <input type="text" id="từ điển" placeholder="Nhập từ cần dịch"><br/>
+    <div id="result"></div>
+    <button onclick="dich()">Dịch</button>
+</div>
+</body>
+<script>
+    function dich() {
+        let englishArr = ["cat", "dog", "buffalo", "cow", "tiger", "lion"];
+        let vietNamArr = ["Con mèo", "Con chó", "Con trâu", "Con bò", "Con hổ", "Con sư tử"];
+        let inputValue = document.getElementById("từ điển").value;
+        let showResult = document.getElementById("result");
+        for (let i = 0; i < vietNamArr.length; i++) {
+            if (englishArr[i] === inputValue) {
+                showResult.innerText = vietNamArr[i];
+                break;
+            } else {
+                showResult.innerText = "Không tìm thấy";
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let str = window.prompt();
+  let result = [];
+  for(let x=0; x<str.length; x++)
+  {
+    if(str.indexOf(str[x]) === 0)
+    {
+      result.push(str[x].toLocaleLowerCase());
+    }
+    else if(str.indexOf(str[x]) !== 0)
+    {
+      result.push(str[x].toLocaleUpperCase());
+    }
+    else
+    {
+      result.push(str[x]);
+    }
+  }
+  document.write(result.join(''));
+</script>
+</body>
+</html>
