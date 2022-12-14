@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let flag = false;
+    let firstString = prompt("Nhập chuỗi thứ nhất:").trim();
+    let secondString = prompt("Nhập chuỗi thứ 2:").trim();
+    if (firstString.length === secondString.length) {
+        for (let i = 0; i < firstString.length; i++) {
+            if (firstString[i] === secondString[i]) {
+                flag = true;
+            } else {
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            alert("2 chuỗi giống nhau");
+        } else {
+            alert("2 chuỗi không giống nhau");
+        }
+    } else {
+        alert("2 chuỗi không giống nhau");
+    }
+</script>
+</body>
+</html>

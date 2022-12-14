@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let arrLength = +prompt("Nhập số phân tử của mảng:");
+    let count = 0;
+    for (let i = 0; i < arrLength; i++) {
+        arr[i] = prompt("Giá trị phần tử thứ " + (i + 1) + " là: ");
+    }
+    for (let i = 0; i < arrLength; i++) {
+        if (!isNaN(arr[i])) {
+            count++;
+        }
+    }
+    alert("Mảng có " + count + " ký tự số.");
+</script>
+</body>
+</html>

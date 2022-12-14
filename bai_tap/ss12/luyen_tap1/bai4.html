@@ -6,12 +6,28 @@
 </head>
 <body>
 <script>
-    let arrLength = parseInt(prompt("Nhập độ dài của mảng:"));
+    // let arrLength = parseInt(prompt("Nhập độ dài của mảng:"));
+    // let arr = [];
+    // for (let i = 0; i < arrLength; i++) {
+    //     arr[i] = parseInt(prompt('Giá trị phần tử thứ ' + (i + 1) + ' là :'));
+    // }
+    // alert("Mảng ban đầu là " + arr + " mảng sau khi bị đảo ngược là " + arr.reverse());
+    // cách 2
     let arr = [];
-    for (let i = 0; i < arrLength; i++) {
-        arr[i] = parseInt(prompt('Giá trị phần tử thứ ' + (i + 1) + ' là :'));
+    let n = prompt("nhập số giá trị trong mảng");
+    for (let i = 0; i < n; i++) {
+        arr [i] = prompt("nhập giá trị thứ " +(i+1)+ "trong mảng");
     }
-    alert("Mảng ban đầu là " + arr + " mảng sau khi bị đảo ngược là " + arr.reverse());
+    let first = 0;
+    let last = arr .length - 1;
+    while (first < last) {
+        let b = arr [first];
+        arr [first] = arr [last];
+        arr [last] = b;
+        first++;
+        last--;
+    }
+    alert(arr );
 </script>
 </body>
 </html>

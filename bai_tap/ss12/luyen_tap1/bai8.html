@@ -6,21 +6,38 @@
 </head>
 <body>
 <script>
+    // let arr = [];
+    // let a;
+    // for (let i = 0; i < 10; i++) {
+    //     arr[i] = parseInt(prompt('Giá trị phần tử thứ ' + (i + 1) + ' là :'));
+    // }
+    // for (let i = 0; i < 10; i++) {
+    //     for (let j = 0; j < 10; j++) {
+    //         if (arr[i] > arr[j]) {
+    //             a = arr[j];
+    //             arr[j] = arr[i];
+    //             arr[i] = a;
+    //         }
+    //     }
+    // }
+    // alert("Mảng sau khi được sắp xếp là: " + arr);
+    // Cách 2:
     let arr = [];
-    let a;
+    let min = 0;
     for (let i = 0; i < 10; i++) {
-        arr[i] = parseInt(prompt('Giá trị phần tử thứ ' + (i + 1) + ' là :'));
+        arr[i] = Number(prompt("Nhập phần tử mảng thứ " + i));
     }
-    for (let i = 0; i < 10; i++) {
-        for (let j = 0; j < 10; j++) {
-            if (arr[i] > arr[j]) {
-                a = arr[j];
-                arr[j] = arr[i];
-                arr[i] = a;
+    document.write("Mảng ban đầu là: [" + arr + "]<br>");
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+                min = arr[i];
+                arr[i] = arr[j];
+                arr[j] = min;
             }
         }
     }
-    alert("Mảng sau khi được sắp xếp là: " + arr);
+    document.write("Mảng sau khi sắp xếp là: ["+arr+"]");
 </script>
 </body>
 </html>
