@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="add()">show</button>
+<script>
+    function add() {
+        let result = 0;
+        alert("Kết quả ban đầu của result là : " + result);
+        result = addNumbers();
+        alert("Kết quả sau khi result được gắn với hàm addNumber là : " + result)
+    }
+
+    function addNumbers() {
+        let firstNum = 4;
+        let secondNum = 8;
+        let result = firstNum + secondNum;
+        return result;
+    }
+</script>
+</body>
+</html>
