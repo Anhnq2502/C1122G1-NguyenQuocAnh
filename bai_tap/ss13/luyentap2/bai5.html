@@ -9,13 +9,13 @@
     let arrLength = +prompt("Nhập độ dài của mảng");
     let arr = [];
 
-    for (let i = 0; i < arrLength; i++){
-        arr[i] = prompt("Nhập số thứ " + i );
+    for (let i = 0; i < arrLength; i++) {
+        arr[i] = prompt("Nhập số thứ " + i);
     }
 
-    function findMin(arr){
+    function findMin(arr) {
         let min;
-        for (let i = 0 ; i < arr.length;i++) {
+        for (let i = 0; i < arr.length; i++) {
             min = arr[0];
             if (min > arr[i]) {
                 min = arr[i];
@@ -23,7 +23,8 @@
         }
         return min;
     }
-    let min = findMin(arr) ;
+
+    let min = findMin(arr);
     alert(min);
 </script>
 </body>
