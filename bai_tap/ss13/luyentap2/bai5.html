@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = +prompt("Nhập số thứ nhất");
+    let number2 = +prompt("Nhập số thứ hai");
+    let number3 = +prompt("Nhập số thứ ba");
+    alert(" Số nhỏ nhất trong ba số là: " + findMinNumber())
+
+    function findMinNumber() {
+        return Math.min(number1, number2, number3);
+    }
+</script>
+</body>
+</html>

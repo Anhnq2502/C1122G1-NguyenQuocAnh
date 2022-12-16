@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrLength = +prompt("Độ dài của mảng");
+    let arr = [];
+    for (let i = 0; i < arrLength; i++) {
+        arr[i] = prompt('Giá trị phần tử thứ ' + (i + 1) + ' là :');
+    }
+    let characters = prompt("Nhập kí tự bạn muốn tìm trong mảng:");
+    let isResultFind = findCharacterInArray(arr, characters);
+    if (isResultFind !== 0) {
+        alert("Số lần kí tự xuất hiện trong mảng là: " + isResultFind);
+    } else {
+        alert("Kí tự này không có trong mảng " + "-1");
+    }
+
+    function findCharacterInArray(arr, characters) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === characters) {
+                count++;
+            }
+        }
+        return count;
+    }
+</script>
+</body>
+</html>
