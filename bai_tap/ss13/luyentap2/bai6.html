@@ -6,14 +6,18 @@
 </head>
 <body>
 <script>
-    let number = +prompt("Nhập số cần kiểm tra");
-    alert(checkNumber(number))
-
     function checkNumber(number) {
         if (number > 0) {
             return true;
         }
         return false;
+    }
+
+    let number = prompt("Nhập kí tự cần kiểm tra:");
+    if (checkNumber(number)) {
+        alert("Đây là số nguyên dương");
+    } else {
+        alert("Đây là số nguyên âm");
     }
 </script>
 </body>
