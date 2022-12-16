@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function soSanh(str) {
+    function check(str) {
         if (str % 2 === 0 || str % 2 === 1) {
             return true;
         }
@@ -14,7 +14,7 @@
     }
 
     let str = prompt("Nhập kí tự cần kiểm tra:");
-    if (soSanh(str)) {
+    if (check(str)) {
         alert("Đây là số");
     } else {
         alert("Đây là kí tự");
