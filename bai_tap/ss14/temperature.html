@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="degree" placeholder="Nhập độ C">
+<button onclick="switchTemperature()">Check</button>
+<script>
+    class Temperature {
+        constructor(degreeC) {
+            this.degreeC = degreeC;
+        }
+
+        switchDegreeCtoF() {
+            return (9 * this.degreeC + 160) / 5;
+        }
+
+        switchDegreeCtoK() {
+            return this.degreeC + 273.15;
+        }
+    }
+
+    function switchTemperature() {
+        let temperature = +document.getElementById("degree").value;
+        if (temperature < -273) {
+            alert("Sai nhiệt độ");
+        } else {
+            let temperatureObject = new Temperature(temperature);
+            alert("Độ F = " + temperatureObject.switchDegreeCtoF());
+            alert("Độ K = " + temperatureObject.switchDegreeCtoK());
+        }
+    }
+</script>
+</body>
+</html>
