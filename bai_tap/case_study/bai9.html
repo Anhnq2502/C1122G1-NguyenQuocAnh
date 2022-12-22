@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numerators = [];
+    let numeratorsLength = +prompt("Nhập độ dài của mảng chứa tử số");
+    let denominators = [];
+    let demoninatorsLength = +prompt("Nhập độ dài của mảng chứa mẫu số");
+    for (let i = 0; i < numeratorsLength; i++) {
+        numerators[i] = +prompt("Nhập tử số thứ: " + (i));
+    }
+    for (let j = 0; j < demoninatorsLength; j++) {
+        denominators[j] = +prompt("Nhập mẫu số thứ: " + (j));
+    }
+    let max = numerators[0] / denominators[0];
+    let x;
+    for (let i = 1; i < numerators.length; i++) {
+        if (numerators[i] / denominators[i] > max) {
+            max = numerators[i] / denominators[i];
+            x = i;
+        }
+    }
+    document.write("Giá trị max là: " + max + "<br/>");
+    document.write("tại chỉ số: " + x);
+</script>
+</body>
+</html>

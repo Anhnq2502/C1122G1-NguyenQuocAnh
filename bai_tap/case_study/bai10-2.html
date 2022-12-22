@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let text = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    let numbers = prompt("nhập dãy số");
+    let array = numbers.split("");
+    let arrayEmpty = [];
+    for (let i = 0; i < numbers.length; i++) {
+        for (let j = 0; j < number.length; j++) {
+            if (array[i] == number[j]) {
+                arrayEmpty.push(text[j]);
+            }
+        }
+    }
+    alert(arrayEmpty.join(" "));
+</script>
+</body>
+</html>

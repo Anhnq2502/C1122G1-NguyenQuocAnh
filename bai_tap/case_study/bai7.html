@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let aLength = +prompt("Nhập độ dài của mảng a");
+    for (let i = 0; i < aLength; i++) {
+        a[i] = +prompt("Nhập giá trị thứ" + i);
+        if (i > 0) {
+            b[i] = b[i - 1] + a[i - 1] + a[0];
+        }
+        if (i === 0) {
+            b[i] = a[i];
+        }
+    }
+    alert(b);
+</script>
+</body>
+</html>

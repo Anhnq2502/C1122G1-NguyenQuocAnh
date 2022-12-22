@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số nhân viên")
+    for (let i = 0; i < n; i++) {
+        let tax;
+        let salary = +prompt("Nhập lương của nhân viên thứ: " + (i + 1) + "(triệu VNĐ)")
+        if (salary >= 15) {
+            tax = salary * 0.2;
+            salary = salary - tax;
+        }
+        if (salary >= 7 && salary < 15) {
+            tax = salary * 0.15;
+            salary = salary - tax;
+        }
+        if (salary < 7 && salary > 0) {
+            tax = salary * 0.05;
+            salary = salary - tax;
+        }
+        alert(" tiền thuế của nhân viên thứ " + (i + 1) + " là " + tax + " triệu");
+        alert(" lương của nhân viên thứ " + (i + 1) + " là " + salary + " triệu");
+    }
+</script>
+</body>
+</html>

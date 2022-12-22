@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Số lượng</th>
+        <th>Tên SP</th>
+        <th>Đơn giá</th>
+    </tr>
+    <tr>
+        <th id="slCafe">0</th>
+        <th>
+            <button onclick="cafe()">Cà phê</button>
+        </th>
+        <th>15000</th>
+    </tr>
+    <tr>
+        <th id="slCam">0</th>
+        <th>
+            <button onclick="orange()">Cam Vắt</button>
+        </th>
+        <th>30000</th>
+    </tr>
+    <tr>
+        <th id="slCarot">0</th>
+        <th>
+            <button onclick="carot()">Cà rốt ép</button>
+        </th>
+        <th>30000</th>
+    </tr>
+    <tr>
+        <th id="slCachua">0</th>
+        <th>
+            <button onclick="caChua()">Cà chua ép</button>
+        </th>
+        <th>30000</th>
+    </tr>
+    <tr>
+        <th id="slNuocLoc">0</th>
+        <th>
+            <button onclick="water()">Nước lọc</button>
+        </th>
+        <th>10000</th>
+    <tr>
+        <th id="slDua">0</th>
+        <th>
+            <button onclick="dua()">Nước dừa</button>
+        </th>
+        <th>15000</th>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="tong()">Total</button>
+        </td>
+        <td id="tong">0</td>
+    </tr>
+</table>
+<script>
+    let a = 0;
+    let b = 0;
+    let c = 0;
+    let d = 0;
+    let e = 0;
+    let f = 0;
+    let total;
+
+    function cafe() {
+        a++;
+        document.getElementById("slCafe").innerHTML = a;
+    }
+
+    function orange() {
+        b++;
+        document.getElementById("slCam").innerText = b;
+    }
+
+    function carot() {
+        c++;
+        document.getElementById("slCarot").innerText = c;
+    }
+
+    function caChua() {
+        d++;
+        document.getElementById("slCachua").innerText = d;
+    }
+
+    function water() {
+        e++;
+        document.getElementById("slNuocLoc").innerText = e;
+    }
+
+    function dua() {
+        f++;
+        document.getElementById("slDua").innerText = f;
+    }
+
+    function tong() {
+        total = a * 15000 + b * 30000 + c * 30000 + d * 30000 + e * 10000 + f * 15000;
+        document.getElementById("tong").innerHTML = total;
+    }
+</script>
+</body>
+</html>

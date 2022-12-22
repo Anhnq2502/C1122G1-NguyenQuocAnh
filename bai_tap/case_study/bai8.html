@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayA = [];
+    let arrayALength = +prompt("Nhập độ dài của mảng A");
+    let arrayB = [];
+    let arrayBLength = +prompt("Nhập độ dài của mảng B");
+    let arrayC = [];
+    for (let i = 0; i < arrayALength; i++) {
+        arrayA[i] = +prompt("Nhập giá trị thứ: " + i);
+    }
+    for (let j = 0; j < arrayBLength; j++) {
+        arrayB[j] = +prompt("Nhập giá trị thứ: " + j);
+    }
+    for (let i = 0; i < arrayBLength; i++) {
+        let flag = true;
+        for (let j = 0; j < arrayBLength; j++) {
+            if (arrayB[i] === arrayA[j]) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            arrayC.push(arrayB[i]);
+        }
+    }
+    alert(arrayC);
+</script>
+</body>
+</html>
