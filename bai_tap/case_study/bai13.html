@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = prompt("Nhập mảng");
+    let strings = string.split("");
+    for (let i = 0; i < strings.length; i++) {
+        for (let j = i + 1; j < strings.length; j++) {
+            if (strings[i] === strings[j]) {
+                strings.splice(j, 1);
+                j--;
+            }
+        }
+    }
+
+    alert("Có " + strings.length + " ký tự khác nhau là " + strings );
+</script>
+</body>
+</html>

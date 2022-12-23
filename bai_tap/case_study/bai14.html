@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrC = [];
+    let string1 = prompt("Nhập chuỗi 1");
+    let string2 = prompt("Nhập chuỗi 2");
+    let arrA = string1.split("");
+    let arrB = string2.split("");
+    for (let i = 0; i < arrA.length; i++) {
+        for (let j = 0; j < arrB.length; j++) {
+            if (arrA[i] === arrB[j]) {
+                arrC.push(arrB[j]);
+                arrB.splice(j, 1);
+            }
+        }
+    }
+    arrC.sort();
+    document.write(arrC + "<br>");
+    for (let i = 0; i < arrC.length; i++) {
+        let count = 1;
+        for (let j = i + 1; j < arrC.length; j++) {
+            if (arrC[i] === arrC[j]) {
+                count++;
+                arrC.splice(j, 1);
+            }
+        }
+        document.write("có " + count + " " + arrC[i] + "<br>");
+    }
+
+</script>
+</body>
+</html>

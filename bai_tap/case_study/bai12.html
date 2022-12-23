@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkString(str) {
+        let a = str.toLowerCase().split(" ");
+        for (let i = 0; i < a.length; i++) {
+            a[i] = a[i].charAt(0).toUpperCase() + a[i].substring(1);
+        }
+        return a.join(' ');
+    }
+
+    function max(arr) {
+        let max = arr[0].length;
+        for (let j = 1; j < arr.length; j++) {
+            if (arr[j].length > max) {
+                max = arr[j].length;
+                console.log(arr[j]);
+            }
+            else {
+                console.log(arr[0]);
+            }
+        }
+        return arr[j];
+    }
+    let a = prompt("Nhập chuỗi bạn muốn chuyển đổi: ");
+    document.write("Chuỗi trước khi chuyển đổi là: " + a + "<br/>");
+    document.write("Chuỗi sau khi chuyển đổi là: " + checkString(a) + "<br/>");
+    let array = checkString(a).split(' ');
+    document.write("Chữ dài nhất trong chuỗi là: " + max(array));
+
+</script>
+</body>
+</html>
