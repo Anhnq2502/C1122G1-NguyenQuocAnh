@@ -15,17 +15,17 @@
     }
 
     function max(arr) {
-        let max = arr[0].length;
+        let max = arr[0];
         for (let j = 1; j < arr.length; j++) {
-            if (arr[j].length > max) {
-                max = arr[j].length;
+            if (arr[j] > max) {
+                max = arr[j];
                 console.log(arr[j]);
             }
             else {
                 console.log(arr[0]);
             }
         }
-        return arr[j];
+        return max;
     }
     let a = prompt("Nhập chuỗi bạn muốn chuyển đổi: ");
     document.write("Chuỗi trước khi chuyển đổi là: " + a + "<br/>");
