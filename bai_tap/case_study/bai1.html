@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập chiều dài của hình chữ nhật");
+    let m = +prompt("Nhập chiều rộng của hình chữ nhật");
+    let sao = "*";
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= m; j++) {
+            if (i === 1 || i === n) {
+                document.write(sao);
+            } else {
+                document.write('&ensp;');
+            }
+            if (j === 1 || j === m) {
+                document.write(sao);
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

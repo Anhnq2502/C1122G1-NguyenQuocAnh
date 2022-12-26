@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h = +prompt("Nhập chiều cao của hình tam giác vuông");
+    for (let i = 1; i <= h; i++) {
+        for (let j = 1; j <= i; j++) {
+            if (j === 1 || j === i || i === h) {
+                let sao = "*";
+                document.write(sao);
+            } else {
+                document.write('&ensp;')
+            }
+        }
+        document.write("<br>");
+    }
+    document.write("<br><br>");
+</script>
+</body>
+</html>
